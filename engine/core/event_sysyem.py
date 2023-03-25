@@ -2,10 +2,10 @@ import queue
 import threading
 
 
-ERROR_EVENT = "ERROR_EVENT"
+INFO_EVENT = "INFO_EVENT"
 
 class Event:
-    def __init__(self, event_type, event_source, event_payload) -> None:
+    def __init__(self, event_type: str, event_source: object, event_payload) -> None:
         self.type: str = event_type
         self.source = event_source
         self.payload = event_payload
@@ -25,8 +25,8 @@ class EventManager:
                 self.listeners[event_type].remove(listener)
 
     def dispatch_event(self, event):
-        if event in self.listeners:
-            event_type = event.type
+        event_type = event.type
+        if event_type in self.listeners:
             for listener in self.listeners[event_type]:
                 listener(event)
 

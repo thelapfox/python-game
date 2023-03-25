@@ -1,0 +1,2 @@
+[2023-03-24 19:38:12.620374] [INFO_EVENT] [<engine.core.logging_system.LoggingManager object at 0x000001B9D352EED0>] = <engine.core.logging_system.LoggingManager object at 0x000001B9D352EED0> has been created.
+[2023-03-24 19:38:12.622376] [INFO_EVENT] [<engine.core.logging_system.LoggingManager object at 0x000001B9D352EED0>] = <engine.core.logging_system.LoggingManager object at 0x000001B9D352EED0> has been destroyed.
