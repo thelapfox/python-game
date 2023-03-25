@@ -7,7 +7,7 @@ from engine.core.event_sysyem import *
 FILE_LOG_PATH = "D:\Python\python-game\config\logging.txt"
 
 
-class LoggingManager(EngineSubsytem):
+class LoggingSubsystem(EngineSubsytem):
     def __init__(self, event_manager: EventManager) -> None:
         super().__init__(event_manager)
 
